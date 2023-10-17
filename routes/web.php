@@ -19,4 +19,9 @@ Route::get('/', function () {
 use App\Http\Controllers\BookController;
 
 Route::resource('books', BookController::class);
-
+Route::get('/', function () {
+    return view('landing');
+});
+Route::get('/about', function () {
+    return view('about');
+});
